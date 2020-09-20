@@ -1,0 +1,11 @@
+<view class="menu">
+  <scroll-view class="left">
+    <view wx:for="{{typeList}}" wx:key="id">{{item.type}}</view>
+ 
+
+  </scroll-view> 
+
+  <scroll-view class="right">
+
+  </scroll-view>
+</view>

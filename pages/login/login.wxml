@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<form bindsubmit="login">
+    <view class="login">
+      <text class="shuoming">请输入您的会员账号</text>
+      <view class="form-wrap">
+        <view class="flex-wrap input-wrap">
+          <text class="label">用户名:</text>
+          <input value="" id="username" class="account-info-input" name="username"/>
+        </view>
+        <view class="flex-wrap input-wrap">
+          <text class="label">密码:</text>
+          <input password id="password" class="account-info-input" name="password"/>
+        </view>
+      </view>
+      <button class="mysubmit" type="primary" form-type="submit">登录</button>
+      <button class="mysubmit" type="primary" bindtap="toRegister">注册</button>
+    </view>
+</form>

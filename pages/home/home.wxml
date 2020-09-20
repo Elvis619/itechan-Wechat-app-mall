@@ -1,0 +1,39 @@
+<swiper indicator-active-color="#e0980b" indicator-dots="true" autoplay="true" interval="2000" circular="true">
+  <swiper-item
+  wx:for="{{showSwiperList}}"
+  wx:key="id"
+  >
+  <navigator url="/pages/detail/detail?id={{item.detail.id}}&name={{item.detail.gname}}&price={{item.detail.gprice}}" class="product">
+  <image src="{{item.detail.imgSrc}}"/>
+  </navigator>
+  </swiper-item>
+</swiper>
+<view class="view_box2">
+ <view class="title">—— 精选特产 ——</view>
+ <scroll-view scroll-x="true">
+    <view 
+    wx:for="{{showHorizontalList}}"
+    wx:key="id"
+    >
+    <navigator url="/pages/detail/detail?id={{item.detail.id}}&name={{item.detail.gname}}&price={{item.detail.gprice}}" class="product">
+      <image src="{{item.detail.imgSrc}}"></image>
+      <text>{{item.detail.gname}}</text>
+    </navigator>  
+    </view>
+  </scroll-view>  
+</view>
+<view class="new_prod">
+  <view class="title">—— 新品上线 ——</view>
+  <view class="newest_box">
+    <view
+    wx:for="{{showVerticalList}}"
+    wx:key="id"
+    >
+    <navigator url="/pages/detail/detail?id={{item.detail.id}}&name={{item.detail.gname}}&price={{item.detail.gprice}}" class="product">
+      <image src="{{item.detail.imgSrc}}"></image>
+      <view>{{item.detail.gname}}</view>
+      <view>￥{{item.detail.gprice}}</view>
+    </navigator>
+    </view>
+  </view>
+</view>

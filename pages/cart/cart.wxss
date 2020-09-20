@@ -1,0 +1,123 @@
+/* pages/cart/cart.wxss */
+page{
+  background: #f7f4f4;
+}
+ .container{
+  align-items: center;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 88%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.row .left{
+  display: flex;
+  flex-direction: row;
+}
+.row  .cb{
+
+  margin-top: 37px;
+  margin-left: 80px;
+}
+.row .left .imgInfo{
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 5px #c1c1c1;
+  margin-left: 10px;
+} 
+.row .right{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.row .right .name{
+  font-weight: bold;
+}
+.row .right .price{
+  color: #f40;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.row .oper{
+position: absolute;
+margin-top: 80px;
+margin-left: 100px;
+
+}
+.row .oper .minus{
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  font-size: 19px;
+  text-align: center;
+  border:1px solid #c1c1c1;
+  background: rgb(224, 224, 224);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.row .oper .add{
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  font-size: 19px;
+  text-align: center;
+  border:1px solid #c1c1c1;
+  background: rgb(224, 224, 224);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.row .oper .count{
+  width: 25px;
+  height: 25px;
+  min-height: 25px;
+  min-width: 25px;
+  font-size: 19px;
+  text-align: center;
+  border-top:1px solid #c1c1c1;
+  border-bottom:1px solid #c1c1c1;
+  color: #f40;
+}
+.bottom{
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+.bottom .selectAll{
+  margin-left: 10px;
+}
+
+/* .bottom .right{
+  height: 45px;
+  
+  align-items: center;
+  width: auto;
+} */
+.bottom  .price{
+    text-align: center;
+   margin-left: 140px;
+    color: #f40;
+}
+.bottom .btn{
+  width: 120px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background-color: rgb(50, 185, 10);
+  text-align: center;
+}

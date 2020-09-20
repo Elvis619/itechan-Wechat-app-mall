@@ -1,0 +1,35 @@
+<wxs module="numberUtil" src="../../utils/util.wxs"></wxs>
+<!-- 地址 -->
+<view class="container-address" bindtap="showAddressList">
+  <image class="icon-address" src="../../images/icon_address.jpg"></image>
+  <view class="right">
+    <view>
+       <text>{{address.name}}</text>
+       <text class="phone">{{address.phone}}</text>
+    </view>
+    <text>{{address.address}}</text>
+  </view>
+    <image class="arrow-right" src="../../images/icon_right.jpg"></image>
+</view>
+<!-- 购买商品列表 -->
+<view class="container-orderDetail">
+  <block wx:for="{{cartList}}" wx:key="item">
+    <view class="goodsInfo">
+      <image class="coverImage" src="{{item.imgSrc}}" mode="aspectFill"></image>
+      <text class="name">{{item.name}}</text>
+      <text class="count">{{item.count}}</text>
+      <text class="price">{{item.totalPrice}}</text>
+    </view>  
+  </block>
+</view>
+<!-- 总金额 -->
+<view class="container-calculate">
+  <text class="name">总计</text>
+  <text class="totalPrice">￥{{numberUtil.numberFormat(totalPrice)}}</text>
+</view>
+
+<!-- 底部购买区域 -->
+<view class="container-bottom">
+  <text class="totalPrice">￥{{numberUtil.numberFormat(totalPrice)}}</text>
+  <text class="buyBtn" bindtap="createOrder">确认下单</text>
+</view>

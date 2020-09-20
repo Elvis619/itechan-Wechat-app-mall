@@ -1,0 +1,32 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view scroll-y>
+<text class="title">产品详情</text>
+<view>
+<swiper indicator-active-color="#e0980b" indicator-dots circular autoplay>
+  <swiper-item>
+    <video src="{{showDetailLis.video}}" controls="true"></video>
+  </swiper-item>
+    <swiper-item>
+    <image src="{{showDetailList.detailImg01}}"></image>
+  </swiper-item>
+    <swiper-item>
+    <image src="{{showDetailList.detailImg02}}"></image>
+  </swiper-item>
+</swiper>
+<view class="info">
+  <text class="name">{{showDetailList.name}}</text>
+  <text class="price">￥{{showDetailList.price}}</text>
+</view>
+</view>
+<text class="title">产品详情介绍</text>
+<view class="wrap">
+  <image src="{{showDetailList.detailImg01}}" mode="widthFix"></image>
+  <image src="{{showDetailList.detailImg02}}" mode="widthFix"></image>
+  <image src="{{showDetailList.detailImg03}}" mode="widthFix"></image>
+</view>
+</scroll-view>
+
+
+<view class="bottom">
+<text class="add-cart" catchtap="cartAdd">加入购物车</text>
+</view>

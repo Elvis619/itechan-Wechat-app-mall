@@ -1,0 +1,34 @@
+<!--pages/cart/cart.wxml-->
+<wxs module="numberUtil" src="../../utils/util.wxs"></wxs>
+ <view class="container">
+      <!-- 购物车列表 -->
+    <block wx:for="{{cartList}}" wx:key="item">
+        <view class="row">
+         
+          <view class="left">
+             
+              <image class="imgInfo" src="{{item.imgSrc}}" mode="aspectFill"></image>
+          </view>
+          <view class="right">
+              <text class="name">{{item.name}}</text>
+              <text class="price">￥{{item.price}}</text>
+          </view>
+          <view class="oper">
+            <text class="minus" catchtap="minus" data-index="{{index}}">{{"- "}}</text>
+            <text class="count">{{item.count}}{{" "}}</text>
+            <text class="add" catchtap="add" data-index="{{index}}">{{" +"}}</text>
+          </view>
+          <checkbox-group id="{{item.id}}" bindchange="change" data-index="{{index}}" class="cb">
+              <checkbox value="{{item.id}}"></checkbox>
+              </checkbox-group>
+        </view>
+    </block>
+    <view class="bottom">
+    
+      <text class="selectAll" catchtap="selectAll" >全选</text>
+      
+      <text class="price">￥{{numberUtil.numberFormat(price)}}</text>
+      <text class="btn" catchtap="showCreateOrderPage">结算</text>
+     
+    </view>
+</view>

@@ -1,0 +1,46 @@
+/* pages/address/address.wxss */
+.container{
+  box-sizing: border-box;
+  align-items: center;
+}
+.item{
+  width: 90%;
+  background: white;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 3px 3px 8px #c1c1c1;
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+.item .top{
+  display: flex;
+  flex-direction: row;
+}
+.item .top text:nth-child(2){
+  margin-left: 10px;
+
+}
+.item .address{
+  margin-top: 10px;
+}
+.item .edit{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: 0px;
+  padding: 15px;
+}
+.container-add{
+  position: fixed;
+  right: 0px;
+  bottom: 30px;
+  padding: 14px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background: linear-gradient(to right,rgb(105, 102, 105),rgb(243,235,160));
+  text-align: center;
+  color: white;
+}

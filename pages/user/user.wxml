@@ -1,0 +1,14 @@
+
+<view class="container">
+  <!-- 头像 -->
+  <view class="myInfo">
+  <image class="avatar" src="../../images/tab1_active.png"></image>
+  <text class="nickName">{{username}}</text>
+  </view>
+  <!-- 条目 -->
+  <view class="container-items">
+    <text class="item" bindtap="myAddress">收货地址管理</text>
+    <text class="item" bindtap="myOrders">我的订单</text>
+  
+  </view>
+</view>

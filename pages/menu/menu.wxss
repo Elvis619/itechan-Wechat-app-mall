@@ -1,0 +1,31 @@
+/* pages/menu/menu.wxss */
+page{
+  height: 100%;
+  background: #fff;
+}
+.menu{
+  height: 100%;
+  display: flex;
+}
+.left{
+  width: 170rpx;
+  height: 100%;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.left view{
+  height: 100rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  border-left: 5rpx solid white;
+  box-sizing: border-box;
+}
+.left view.active{
+  border-left: 7rpx solid skyblue;
+  box-sizing: border-box;
+}
+.right{
+  flex: 1;
+  height: 100%;
+}

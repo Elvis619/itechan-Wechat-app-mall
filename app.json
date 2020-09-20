@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/login/login",
+    "pages/user/user",
+    "pages/menu/menu",
+    "pages/cart/cart",
+    "pages/address/address",
+    "pages/orders/orders",
+    "pages/addressOperate/addressOperate",
+    "pages/orderCreate/orderCreate",
+    "pages/goodsPay/goodsPay",
+    "pages/orderDetail/orderDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#576b95",
+    "navigationBarTitleText": "i - 特产",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#ec9f01",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/tab1.png",
+        "selectedIconPath": "/images/tab1_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "/images/tab3.png",
+        "selectedIconPath": "/images/tab3_active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/tab4.png",
+        "selectedIconPath": "/images/tab4_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

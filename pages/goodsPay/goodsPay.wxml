@@ -1,0 +1,8 @@
+<view class="container-payInfo">
+  <image class="icon_order" src="../../images/icon_order.jpg"></image>
+  <view class="info">
+    <text>支付金额 </text>
+    <text class="money">￥{{totalPrice}}</text>
+  </view>
+  <text class="pay" bindtap="payOrder">立即支付</text>
+</view>

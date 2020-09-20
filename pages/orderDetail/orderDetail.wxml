@@ -1,0 +1,56 @@
+<scroll-view scroll-y="true" style="height: {{deviceH - 41}}px">
+  <block wx:for="{{orderList}}" wx:key="item">
+    <view class="container-orderDetail" data-index="{{index}}">
+        <!-- 基本信息 -->
+        <view class="base-info">
+          <text class="name"></text>
+          <text class="stateStr">{{item.stateStr}}</text>
+        </view>
+
+        <!-- 订单商品列表 -->
+        <block wx:for="{{item.ordersDetailList}}" wx:key="item">
+          <view class="goodsInfo">
+            <image class="coverImage" src="{{item.imgSrc}}"  mode="aspectFill"></image>
+            <text class="name">{{item.name}}</text>
+            <text class="count">x{{item.count}}</text>
+            <text class="price">￥{{item.price}}</text>
+          </view>
+        </block>
+        <!-- 下单时间 -->
+        <view class="createTime">
+            <text>下单时间</text>
+            <text>{{item.createTime}}</text>
+        </view>
+        <!-- 总金额 -->
+        <view class="container-calculate">
+          <text class="name">总计:</text>
+          <text class="totalPrice">{{item.totalPrice}}</text>
+        </view>
+        
+        <view>
+          <!-- 订单编号 -->
+          <view class="createTime">
+           <text>订单编号</text>
+            <text>{{item.orderSn}}</text>
+          </view>
+          <!-- 收货人 -->
+          <view class="createTime">
+           <text>收货人</text>
+            <text>{{address.name}}</text>
+          </view>
+          <!-- 电话 -->
+          <view class="createTime">
+           <text>电话</text>
+            <text>{{address.phone}}</text>
+          </view>
+          <!-- 收货地址 -->
+          <view class="createTime">
+           <text>收货地址</text>
+            <text>{{address.address}}</text>
+          </view>
+
+        </view>
+
+   </view>
+  </block>
+</scroll-view>
